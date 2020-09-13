@@ -1,0 +1,12 @@
+<h2>hello count {{count}}</h2>
+<a href="{% url 'home'  %}">start again</a>
+{% csrf_token %}
+
+{{text}}
+<br/>
+{% for word, count1 in sortword  %}
+{{word}}-{{count1}}
+<br/>
+
+
+{% endfor %}

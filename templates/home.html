@@ -1,0 +1,11 @@
+<h1>hello</h1>
+
+<form action="{% url 'count' %}">
+    {% csrf_token %}
+    
+<textarea name="text" cols="45" rows="5"></textarea>
+    <br />
+<input type="submit" value="count!" />
+
+
+</form>
